@@ -1,21 +1,19 @@
-
+    //this is the ball script
 using UnityEngine;
-
-public class test : MonoBehaviour
+using System.Collections;
+    public class test : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public float speed = 30;
+
+    void start()
     {
-        Debug.Log("Hello Word!");
+
+        //Initial Velocity 
+        GetComponent<Rigidbody2D>().velocity = Vector2.right * speed;
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log("Hello Update!");
-
-
-
-    }          
-    
 }
+
+
+
+
+
